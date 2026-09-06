@@ -1,0 +1,30 @@
+nav {
+    background-color: deepskyblue;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.navContent {
+    background-color: white;
+    color: rgb(0, 38, 255);
+    font-size: 20px;
+    /* margin: 10px; */
+    /* border-radius: 10%; */
+    /* text-decoration: none; */
+    padding: 7px;
+    margin-left: 3px;
+}
+h1 {
+    background-image: url(assets/スクリーンショット\ \(23\).png);
+    color: white;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-size: 100% 100%;
+
+}
+img {
+    width: 100%;
+}
+.news {
+    border: 3px;
+}
