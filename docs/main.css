@@ -1,3 +1,7 @@
+.topbar {
+    display: flex;
+    position: sticky;
+}
 nav {
     background-color: rgb(0, 13, 255);
     height: 50px;
@@ -5,12 +9,9 @@ nav {
     display: flex;
     align-items: center;
     margin-left: auto;
-    border-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     padding-top: 0;
-}
-.topbar {
-    display: flex;
-    position: sticky;
 }
 .navContent {
     /* background-color: white; */
@@ -24,8 +25,26 @@ nav {
     margin-left: auto;
     margin-right: auto;
 }
+
+.linkButton:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    animation: fadeIn 300ms forwards;
+}
+h1 {
+    margin-left: 20px;
+    margin-right: 40px;
+    border-width: 2px;
+    margin-bottom: 30px;
+}
+#title {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
 img {
     width: 100%;
+    max-width: 1080px;
 }
 .news {
     border: 3px;
@@ -35,6 +54,36 @@ img {
 .news h2 {
     margin-top: 0;
 }
-#title {
-    font-size: 30px;
+figcaption {
+    padding-bottom: 30px;
+}
+figcaption h2 {
+    margin: 0;
+}
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    overflow-y: scroll;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+@media screen and (min-width: 768px) {
+    figure {
+        display: flex;
+    }
+    figcaption {
+        margin-left: 10px;
+        margin-top: 70px;
+    }
+    .imgAndName img {
+        width: 500px;
+    }
 }
